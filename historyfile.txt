@@ -1,0 +1,145 @@
+    1  sudo apt update
+    2  sudo nano /etc/resolv.conf 
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install gcc++
+    6  sudo apt install gcc
+    7  sudo apt install build-essentials
+    8  sudo apt install build-essential
+    9  sudo apt install gdb
+   10  init 0
+   11  gcc --version
+   12  cd "/home/rps/Desktop/C Demo/" && gcc first.c -o first && "/home/rps/Desktop/C Demo/"first
+   13  sudo su
+   14  tar xvfz node_exporter-1.7.0.linux-amd64.tar.gz 
+   15  cd node_exporter-1.7.0.linux-amd64/
+   16  sudo mv node_exporter /usr/local/bin/
+   17  sudo tee /etc/systemd/system/node_exporter.service<<EOF
+   18  [Unit]
+   19  Description=Node Exporter
+   20  After=network.target
+   21   
+   22  [Service]
+   23  User=rps
+   24  Group=rps
+   25  Type=simple
+   26  ExecStart=/usr/local/bin/node_exporter
+   27   
+   28  [Install]
+   29  WantedBy=multi-user.target
+   30  EOF
+   31  sudo systemctl daemon-reload
+   32  sudo systemctl start node_exporter
+   33  sudo systemctl enable node_exporter
+   34  sudo systemctl status node_exporter
+   35  sudo apt install gcc
+   36  sudo apt install git
+   37  sudo apt install make
+   38  sudo apt install vim
+   39  sudo apt install g++
+   40  sudo apt install gedit
+   41  sudo apt install cmake
+   42  sudo apt install g++
+   43  df -h
+   44  sudo apt update
+   45  sudo apt upgrade
+   46  sudo reboot
+   47  mkdir class
+   48  ls
+   49  cd class
+   50  pwd
+   51  mkdir class2
+   52  mkdir class1
+   53  cd class1
+   54  cd.
+   55  cat file1.txt
+   56  cat > file1.txt
+   57  cat file1.txt
+   58  cd .
+   59  cd ..
+   60  vi file2.txt
+   61  cat file2.txt
+   62  cd class1
+   63  vi file2.txt
+   64  cat file2.txt
+   65  open file1
+   66  open file1.txt
+   67  touch file3.txt file4.txt file5.txt
+   68  find file3.txt
+   69  find . -name file2.txt
+   70  find ./file2.txt
+   71  find -file2.txt
+   72  find . -name file2.txt
+   73  dirname
+   74  dirname file2.txt
+   75  cd .
+   76  cd ..
+   77  dirname file2.txt
+   78  cd .
+   79  cd ..
+   80  dirname file3.txt
+   81  dirname /class/class1/file2.txt
+   82  dirname ./file2.txt
+   83  dirname /file2.txt
+   84  history
+   85  man ls
+   86  man cd
+   87  man class
+   88  pwd
+   89  ls
+   90  cd class
+   91  cd class1
+   92  cat file1.txt
+   93  cat file2.txt
+   94  open file1.txt
+   95  mv file2.txt file3.txt
+   96  sudo apt update
+   97  sudo apt upgrade
+   98  man ls
+   99  ls /class
+  100  ls class
+  101  cd .
+  102  cd ..
+  103  cd ...
+  104  cd.
+  105  cd .
+  106  cd ..
+  107  ls /class
+  108  mkdir fruits
+  109  cd fruits
+  110  cd etc
+  111  cd fruiiits
+  112  cd fruits
+  113  cd .
+  114  cd ..
+  115  cat fruits
+  116  cd fruits
+  117  cat file1.txt
+  118  cat > file1.txt
+  119  cd ..
+  120  ls
+  121  uname
+  122  ping www.google.com
+  123  history
+  124  who
+  125  whoami
+  126  tail file1.txt
+  127  mkdir vidya
+  128  cd vidya
+  129  cat lab1.txt
+  130  cd lab1
+  131  cat file1.txt
+  132  cd .
+  133  cd ..
+  134  rmdir
+  135  cd class
+  136  cd class1
+  137  wc file.txt
+  138  wc file1.txt
+  139  less file2.txt
+  140  less file1.txt
+  141  cd class
+  142  cd class1
+  143  touch historyfile.txt
+  144  ls
+  145  history >> historyfile.txt
